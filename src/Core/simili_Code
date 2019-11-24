@@ -1,0 +1,71 @@
+
+	
+	3 mode de jeu. 
+	Duel / Challenger / Defenseur
+	
+	Duel => L'IA et le joueur s'affronte tour à tour pour deviner le code de l'adversaire.
+	Challenger => Le joueur affronte l'IA en devinant le code. Nombre limité d'essais.
+	Defenseur => L'IA essaie de craquer le code du joueur. Nombre limité d'essais.
+	
+	
+						EXEMPLE DE SETTER ET DE GETTER
+						
+						
+		Getter :
+		
+		public Code getCode(){
+			return code; //Cette fonction retourne une copie de la valeur  de  resistance .
+		}
+		
+		Setter :
+		
+		public void setProposition(Proposition proposition) {
+			this.proposition = proposition; //Cette fonction permet de modifier cette information depuis l'extérieur.
+		}
+	
+						MODULE PERMETTANT LA SAISIE DES INFORMATIONS.
+		
+	Saisie des informations:
+	
+	Importer le module Scanner. (import java.util.Scanner)
+	
+		Utiliser le bout de code suivant :	
+		Scanner sc = new Scanner(System.in); // Objet : scanner. Commande : sc. "new" pour créer un nouvel objet => Scanner. System.in pour indiquer une entrée system
+		System.out.println("Veuillez saisr un mot: ");
+		int P1 = sc.nextInt();
+		int P2 = sc.nextInt();
+		int P3 = sc.nextInt();
+		int P4 = sc.nextInt();
+							
+	
+						MODULE PERMETTANT DE VERIFIER LA PROPOSITION. EXCLUSIVEMENT POUR LE MODE CHALLENGER ET DUEL
+	
+	Format du code (C1/C2/C3/C4) 	// "C" pour Code, "C1" pour chiffre 1 du code (et ainsi de suite)
+	
+	Lorsque proposition faite:		// "P" pour Proposition, "P1 pour chiffre 1 du code (et ainsi de suite)
+		Si P1 < C1 retourner "  -  " en dessous de C1 à l'utilisateur 
+		Si P1 = C1 retourner "  =  " en dessous de C1 à l'utilisateur
+		Si P1 > C1 retourner "  +  " en dessous de C1 à l'utilisateur
+		
+		Si P2 < C2 retourner "  -  " en dessous de C2 à l'utilisateur
+		Si P2 = C2 retourner "  =  " en dessous de C2 à l'utilisateur
+		Si P2 > C2 retourner "  +  " en dessous de C2 à l'utilisateur
+		
+		Si P3 < C3 retourner "  -  " en dessous de C3 à l'utilisateur
+		Si P3 = C3 retourner "  =  " en dessous de C3 à l'utilisateur
+		Si P3 > C3 retourner "  +  " en dessous de C3 à l'utilisateur
+		
+		Si P4 < C4 retourner "  -  " en dessous de C4 à l'utilisateur
+		Si P4 = C4 retourner "  =  " en dessous de C4 à l'utilisateur
+		Si P4 > C4 retourner "  +  " en dessous de C4 à l'utilisateur
+		
+	Lorsque P(1,2,3,4) = C(1,2,3,4):
+		Fin
+		
+		Pour faire la verif manuel, demander à lutilsateur de rentrer en un bloc de manière brut les données de Proposition.
+		Ensuite, le code vérifie pour chaque case du tableau si P=C ou P<C ou P>C. Il renvoie ces informations pour chaque entrée en un bloc.
+		
+			
+			
+							TRAVAILLER AVEC DES STRINGS
+	
