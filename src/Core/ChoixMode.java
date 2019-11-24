@@ -9,33 +9,33 @@ public class ChoixMode {
 		
 
 		Scanner sc = new Scanner(System.in);
-		System.out.println("*************** Bienvenue *************** \n \n Veuillez sélectionner un mode de jeu : "
-				+ "\n \n 1 - Défenseur\n 2 - Challenger\n 3 - Duel ");
+		System.out.println("*************** Bienvenue *************** \n \n Veuillez sï¿½lectionner un mode de jeu : "
+				+ "\n \n 1 - Dï¿½fenseur\n 2 - Challenger\n 3 - Duel ");
 		Choix = sc.nextLine();
 
 		System.out.println(Choix);
 
 		while (Condition == false) {
 
-			if (Choix.contains("1") || Choix.contains("Défenseur") || Choix.contains("défenseur")
+			if (Choix.contains("1") || Choix.contains("Dï¿½fenseur") || Choix.contains("dï¿½fenseur")
 					|| Choix.contains("Defenseur") || Choix.contains("defenseur")) {
-				System.out.println("Mode sélectionné : Défenseur.");
+				System.out.println("Mode sï¿½lectionnï¿½ : Dï¿½fenseur.");
 				Condition = true;
 				Choix = "1";
 
 			} else if (Choix.contains("2") || Choix.contains("Challenger") || Choix.contains("challenger")) {
-				System.out.println("Mode sélectionné : Challenger.");
+				System.out.println("Mode sï¿½lectionnï¿½ : Challenger.");
 				Condition = true;
 				Choix = "2";
 				
 			} else if (Choix.contains("3") || Choix.contains("Duel") || Choix.contains("duel")) {
-				System.out.println("Mode sélectionné : Duel. Préparez-vous.");
+				System.out.println("Mode sï¿½lectionnï¿½ : Duel. Prï¿½parez-vous.");
 				Condition = true;
 				Choix = "3";
 				
 			} else {
-				System.out.println("Veuillez réitérer votre saisie. \nVeuillez sélectionner un mode de jeu : "
-						+ "\n \n 1 - Défenseur\n 2 - Challenger\n 3 - Duel ");
+				System.out.println("Veuillez rï¿½itï¿½rer votre saisie. \nVeuillez sï¿½lectionner un mode de jeu : "
+						+ "\n \n 1 - Dï¿½fenseur\n 2 - Challenger\n 3 - Duel ");
 				Choix = sc.nextLine();
 			}
 		}
