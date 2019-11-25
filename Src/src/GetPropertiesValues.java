@@ -1,7 +1,5 @@
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
-
 import java.util.Properties;
 
 public class GetPropertiesValues {
@@ -11,8 +9,10 @@ public class GetPropertiesValues {
     private InputStream inputstream;
 
     public String getPropertiesValues() throws IOException {
-        String propFile = "config.properties";
+
+
         Properties prop = new Properties();
+        String propFile = "config.properties";
 
         inputstream = getClass().getClassLoader().getResourceAsStream(propFile);
         try {
