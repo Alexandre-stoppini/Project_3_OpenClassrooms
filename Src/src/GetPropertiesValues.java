@@ -9,8 +9,6 @@ public class GetPropertiesValues {
     private InputStream inputstream;
 
     public String getPropertiesValues() throws IOException {
-
-
         Properties prop = new Properties();
         String propFile = "config.properties";
 
